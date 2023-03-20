@@ -16,11 +16,12 @@ function createBookList() {
       <hr />
       `;
     }
+    return;
   });
   bookList.innerHTML = singleBook;
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
-  for (let i = 0; i < books.length; i++) {
+  for (let i = 0; i < books.length; i += 1) {
     let removeButton = document.getElementById('remove' + i);
     removeButton.addEventListener('click', () => {
       let bookId = removeButton.id.slice(6);
