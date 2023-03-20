@@ -5,7 +5,7 @@ const title = document.getElementById('title');
 const author = document.getElementById('author');
 //  function to remove books
 function removeBooks(bookId) {
-  books = books.filter((book) => book.id != bookId);
+  books = books.filter((book) => book.id !== bookId);
   // shift ids of books array elements starting from the removed element
   books.forEach((book) => {
     if (book.id > bookId) book.id -= 1;
@@ -34,7 +34,7 @@ function createBookList() {
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
   for (let i = 0; i < books.length; i += 1) {
-    let newId = 'remove' + i;
+    const newId = 'remove' + i;
     const removeButton = document.getElementById(newId);
     removeButton.addEventListener('click', () => {
       const bookId = removeButton.id.slice(6);
