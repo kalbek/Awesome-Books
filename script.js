@@ -38,7 +38,10 @@ function main() {
   //  function to remove books
   function removeBooks(bookId) {
     books = books.filter((book) => book.id != bookId);
-   
+    // shift ids of books array elements starting from the removed element
+    books.forEach((book) => {
+      if (book.id > bookId) book.id -= 1;
+    });
     // update book list html content with every action of removing books
     createBookList(books);
   }
