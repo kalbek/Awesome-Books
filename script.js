@@ -21,7 +21,7 @@ function createBookList() {
   let singleBook = '';
   bookList.innerHTML = '';
   books.map((book) => {
-    if (books.title !== '' && book.author !== '') {
+    if (books.title !== "" && book.author !== '') {
       singleBook += `
       <div class='book-title'>${book.title}</div>
         <div class='book-author'>${book.author} </div>
@@ -29,13 +29,13 @@ function createBookList() {
       <hr />
       `;
     }
-    return;
   });
   bookList.innerHTML = singleBook;
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
   for (let i = 0; i < books.length; i += 1) {
-    const removeButton = document.getElementById('remove' + i); // remove0
+    let newId = 'remove' + i;
+    const removeButton = document.getElementById(newId);
     removeButton.addEventListener('click', () => {
       const bookId = removeButton.id.slice(6);
       removeBooks(bookId);
