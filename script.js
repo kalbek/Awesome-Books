@@ -20,7 +20,7 @@ function removeBooks(bookId) {
 function createBookList() {
   let singleBook = '';
   bookList.innerHTML = '';
-  books.forEach(book => {
+  books.forEach((book) => {
     if (books.title !== '' && book.author !== '') {
       singleBook += `
       <div class='book-title'>${book.title}</div>
@@ -29,7 +29,7 @@ function createBookList() {
       <hr />
       `;
     }
-  })
+  });
   bookList.innerHTML = singleBook;
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
