@@ -3,19 +3,6 @@ const addButton = document.getElementById('add-books');
 const bookList = document.querySelector('.book-list');
 const title = document.getElementById('title');
 const author = document.getElementById('author');
-//  function to remove books
-function removeBooks(bookId) {
-  books = books.filter((book) => book.id !== bookId);
-  // shift ids of books array elements starting from the removed element
-  books.forEach((book) => {
-    if (book.id > bookId) book.id -= 1;
-  });
-  // update book list html content with every action of removing books
-  createBookList(books);
-  localStorage.setItem('bookdata', JSON.stringify(books));
-  title.focus();
-}
-
 // handle dynamically creating book list html content
 function createBookList() {
   let singleBook = '';
@@ -34,15 +21,13 @@ function createBookList() {
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
   for (let i = 0; i < books.length; i += 1) {
-    const newId = 'remove' + i;
-    const removeButton = document.getElementById(newId);
+    let removeButton = document.getElementById('remove' + i); // remove0
     removeButton.addEventListener('click', () => {
-      const bookId = removeButton.id.slice(6);
+      let bookId = removeButton.id.slice(6);
       removeBooks(bookId);
     });
   }
 }
-
 // handle adding books to books array
 function addBooks(titles, authors) {
   books.push({
@@ -55,7 +40,18 @@ function addBooks(titles, authors) {
   title.focus();
   localStorage.setItem('bookdata', JSON.stringify(books));
 }
-
+//  function to remove books  // 0, 1, 2, 3,
+function removeBooks(bookId) {
+  books = books.filter((book) => book.id != bookId);
+  // shift ids of books array elements starting from the removed element
+  books.forEach((book) => {
+    if (book.id > bookId) book.id -= 1;
+  });
+  // update book list html content with every action of removing books
+  createBookList(books);
+  localStorage.setItem('bookdata', JSON.stringify(books));
+  title.focus();
+}
 const titles = document.getElementById('title');
 const authors = document.getElementById('author');
 //   handle button click event for add books
