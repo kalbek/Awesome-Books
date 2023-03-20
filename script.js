@@ -12,7 +12,7 @@ function createBookList() {
       singleBook += `
       <div class='book-title'>${book.title}</div>
         <div class='book-author'>${book.author} </div>
-        <button class='removes' id='remove${book.id}'>Remove</button>
+        <button class='removes' id='${book.id}'>Remove</button>
       <hr />
       `;
     }
@@ -21,7 +21,7 @@ function createBookList() {
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
   for (let i = 0; i < books.length; i += 1) {
-    let removeButton = document.getElementById('remove' + i); // remove0
+    const removeButton = document.getElementById(i.toString()); // remove0
     removeButton.addEventListener('click', () => {
       let bookId = removeButton.id.slice(6);
       removeBooks(bookId);
