@@ -1,17 +1,17 @@
 let books = [];
-const addButton = document.getElementById("add-books");
-const bookList = document.querySelector(".book-list");
-const title = document.getElementById("title");
-const author = document.getElementById("author");
+const addButton = document.getElementById('add-books');
+const bookList = document.querySelector('.book-list');
+const title = document.getElementById('title');
+const author = document.getElementById('author');
 // handle dynamically creating book list html content
 function createBookList() {
-  let singleBook = "";
-  bookList.innerHTML = "";
+  let singleBook = '';
+  bookList.innerHTML = '';
   books.map((book) => {
     if (books.length !== 0) {
       singleBook += `
-      <div class="book-title">${book.title} </div>
-        <div class="book-author">${book.author} </div>
+      <div class='book-title'>${book.title} </div>
+        <div class='book-author'>${book.author} </div>
         <button class='removes' id='remove${book.id}'>Remove</button>
       <hr />
       `;
@@ -21,8 +21,8 @@ function createBookList() {
   // while creating a book element each time create event listener
   // for every remove button of the book list html element
   for (let i = 0; i < books.length; i++) {
-    let removeButton = document.getElementById("remove" + i);
-    removeButton.addEventListener("click", () => {
+    let removeButton = document.getElementById('remove' + i);
+    removeButton.addEventListener('click', () => {
       let bookId = removeButton.id.slice(6);
       removeBooks(bookId);
     });
@@ -38,7 +38,7 @@ function addBooks(titles, authors) {
   // update book list html content with every action of adding books
   createBookList();
   title.focus();
-  localStorage.setItem("bookdata", JSON.stringify(books));
+  localStorage.setItem('bookdata', JSON.stringify(books));
 }
 //  function to remove books
 function removeBooks(bookId) {
@@ -49,34 +49,34 @@ function removeBooks(bookId) {
   });
   // update book list html content with every action of removing books
   createBookList(books);
-  localStorage.setItem("bookdata", JSON.stringify(books));
+  localStorage.setItem('bookdata', JSON.stringify(books));
   title.focus();
 }
-const titles = document.getElementById("title");
-const authors = document.getElementById("author");
+const titles = document.getElementById('title');
+const authors = document.getElementById('author');
 //   handle button click event for add books
-addButton.addEventListener("click", (e) => {
+addButton.addEventListener('click', (e) => {
   addBooks(titles, authors);
-  titles.value = "";
-  authors.value = "";
+  titles.value = '';
+  authors.value = '';
   e.preventDefault();
 });
 
 // preserve data on browsers on page load
 window.onload = () => {
   // assigning form fields to a variable.
-  const form = document.querySelector("#form");
+  const form = document.querySelector('#form');
   // handling event for every change in input field
-  form.addEventListener("input", () => {
+  form.addEventListener('input', () => {
     const fields = { title, author, books };
     // storing input values to a local storage.
     fields.title = title.value;
     fields.author = author.value;
-    localStorage.setItem("data", JSON.stringify(fields));
+    localStorage.setItem('data', JSON.stringify(fields));
   });
   // parsing the data.
-  const data = JSON.parse(localStorage.getItem("data"));
-  const bookdata = JSON.parse(localStorage.getItem("bookdata"));
+  const data = JSON.parse(localStorage.getItem('data'));
+  const bookdata = JSON.parse(localStorage.getItem('bookdata'));
   // assining values to input fields from local storage on page load.
   if (data !== null && data !== undefined) {
     title.value = data.title;
