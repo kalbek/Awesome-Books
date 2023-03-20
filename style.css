@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .books,
+  .add-books {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  hr {
+    width: 14vw;
+  }
+  
+  form input {
+    margin-bottom: 1rem;
+  }
+  
