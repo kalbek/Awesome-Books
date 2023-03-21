@@ -7,32 +7,33 @@
     <title>Awesome Books</title>
     <link rel="stylesheet" href="style.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Domine&family=Inter:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Domine&family=Inter:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="books flex-column-centered">
       <h1>All Awesome Books</h1>
-      <div class="book-list"></div>
+      <div class="book-list bordered"></div>
       <br />
       <form id="form" action="">
-        <p>Add a new book</p>
-        <input
-          type="text"
-          id="title"
-          name="author"
-          onchange="onchange"
-          placeholder="Title"
-        />
-        <br />
-        <input
-          type="text"
-          id="author"
-          name="author"
-          onchange="onchange"
-          placeholder="Author"
-        />
+        <div class="title-input-group flex-column-centered">
+          <p>Add a new book</p>
+          <input
+            type="text"
+            id="title"
+            name="author"
+            onchange="onchange"
+            placeholder="Title"
+          />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            onchange="onchange"
+            placeholder="Author"
+          />
+        </div>
         <br />
         <button id="add-books">Add</button>
       </form>

@@ -26,10 +26,17 @@ class Books {
     bookList.innerHTML = '';
     books.forEach((book) => {
       bookList.innerHTML += `
-    <div class='book-title'>${book.title}</div>
-      <div class='book-author'>${book.author} </div>
-      <button class='removes' id='${book.id}'>Remove</button>
-    <hr />
+      <div class='flex'>
+      <div class='flex-spaced w-100' id='${book.id % 2 === 0 ? 'evens' : 'odds'}'>
+        <div class ='flex book-title-authors'>
+          <div class='book-title'>"${book.title}" by </div>
+          <div class='book-author'>&nbsp;${book.author} </div>
+        </div>
+        <div class='container'> 
+         <button class='removes' id='${book.id}'>Remove</button>
+      </div>
+      </div>
+    </div>
     `;
     });
     books.forEach((book) => {
@@ -50,10 +57,18 @@ class Books {
     bookList.innerHTML = '';
     books.forEach((book) => {
       bookList.innerHTML += `
-        <div class='book-title'>${book.title}</div>
-          <div class='book-author'>${book.author} </div>
-          <button class='removes' id='${book.id}'>Remove</button>
-        <hr />
+      <div class='flex'>
+        <div class='flex-spaced w-100' id='${book.id % 2 === 0 ? 'evens' : 'odds'}'>
+          <div class ='flex book-title-authors'>
+            <div class='book-title'>"${book.title}" by </div>
+            <div class='book-author'>&nbsp;${book.author} </div>
+          </div>
+          <div class='container'> 
+           <button class='removes' id='${book.id}'>Remove</button>
+        </div>
+        </div>
+      </div>
+   
         `;
     });
     books.forEach((book) => {
@@ -72,13 +87,15 @@ class Books {
     bookList.innerHTML = '';
     books.forEach((book) => {
       bookList.innerHTML += `
-      <div class='flex bordered'>
-        <div class='flex-spaced w-100'>
-          <div class ='flex'>
+      <div class='flex'>
+        <div class='flex-spaced w-100' id='${book.id % 2 === 0 ? 'evens' : 'odds'}'>
+          <div class ='flex book-title-authors'>
             <div class='book-title'>"${book.title}" by </div>
             <div class='book-author'>&nbsp;${book.author} </div>
           </div>
+          <div class='container'> 
            <button class='removes' id='${book.id}'>Remove</button>
+        </div>
         </div>
       </div>
         `;
