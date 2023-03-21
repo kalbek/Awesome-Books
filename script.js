@@ -17,7 +17,7 @@ function removeBooks(bookId) {
   // replace with updating
   bookList.innerHTML = '';
   books.forEach((book) => {
-      bookList.innerHTML += `
+    bookList.innerHTML += `
       <div class='book-title'>${book.title}</div>
         <div class='book-author'>${book.author} </div>
         <button class='removes' id='${book.id}'>Remove</button>
@@ -35,13 +35,12 @@ function removeBooks(bookId) {
   });
   localStorage.setItem('bookdata', JSON.stringify(books));
   title.focus();
-  console.log(books)
 }
 // handle dynamically creating book list html content
 function createBookList() {
   bookList.innerHTML = '';
   books.forEach((book) => {
-      bookList.innerHTML += `
+    bookList.innerHTML += `
       <div class='book-title'>${book.title}</div>
         <div class='book-author'>${book.author} </div>
         <button class='removes' id='${book.id}'>Remove</button>
@@ -51,14 +50,13 @@ function createBookList() {
   books.forEach((book) => {
     // for every remove button of the book list html element
     const removeButton = document.getElementById(book.id.toString());
-    if (removeButton !== null) { 
+    if (removeButton !== null) {
       removeButton.addEventListener('click', () => {
         const bookId = Number(Number(book.id));
         removeBooks(bookId);
       });
     }
   });
-  console.log(books)
 }
 // handle adding books to books array
 function addBooks(titles, authors) {
