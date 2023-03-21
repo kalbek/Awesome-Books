@@ -4,7 +4,14 @@ body {
   align-items: center;
 }
 
-.book-title-authors, .removes p, #add-books p {
+.title-input-group p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.book-title-authors,
+.removes p,
+#add-books p {
   font-size: 17px;
   font-weight: 600;
   padding-bottom: 1px;
@@ -24,6 +31,14 @@ body {
 
 hr {
   width: 20vw;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border: 3px solid #000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 form input {
@@ -61,11 +76,6 @@ form input {
   align-items: center;
 }
 
-.flex-spaced {
-  display: flex;
-  justify-content: space-between;
-}
-
 .bordered {
   width: 50vw;
   border: 4px solid black;
@@ -90,7 +100,7 @@ form {
   padding: 1rem 0.3rem;
 }
 
-.removes  {
+.removes {
   height: 75%;
   margin-top: 4%;
   border: 2px solid black;
@@ -103,25 +113,12 @@ form {
   background-color: #ddd;
 }
 
-.title-input-group p {
-  font-size: 30px;
-  font-weight: 600;
-}
-
 .title-input-group hr {
   height: 3px;
   border-radius: 3px;
   background-color: #000;
-  width:60%;
+  width: 60%;
   margin-top: 1rem;
-}
-
-input {
-  width: 200px;
-  height: 25px;
-  border: 3px solid #000;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 #add-books {
