@@ -74,7 +74,6 @@ form input {
   width: 100%;
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -96,3 +95,6 @@ form {
   background-color: #ddd;
 }
 
+.title-input-group p {
+  font-size: 30px;
+}
