@@ -100,7 +100,7 @@ class Books {
             <div class='book-author'>&nbsp;${book.author} </div>
           </div>
           <div class='container'> 
-           <button class='removes' id='${book.id}'>Remove</button>
+           <button class='removes' id='${book.id}'><p>Remove</p></button>
         </div>
         </div>
       </div>
