@@ -72,10 +72,15 @@ class Books {
     bookList.innerHTML = '';
     books.forEach((book) => {
       bookList.innerHTML += `
-        <div class='book-title'>${book.title}</div>
-          <div class='book-author'>${book.author} </div>
-          <button class='removes' id='${book.id}'>Remove</button>
-        <hr />
+      <div class='flex bordered'>
+        <div class='flex-spaced w-100'>
+          <div class ='flex'>
+            <div class='book-title'>"${book.title}" by </div>
+            <div class='book-author'>&nbsp;${book.author} </div>
+          </div>
+           <button class='removes' id='${book.id}'>Remove</button>
+        </div>
+      </div>
         `;
     });
     books.forEach((book) => {
