@@ -18,3 +18,23 @@ hr {
 form input {
   margin-bottom: 1rem;
 }
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
