@@ -103,11 +103,6 @@ You can deploy this project through Github Pages
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaleb-nuramo/)
 - Website: https://kalbek.github.io/Portfolio/
 
-👤 **@Ekiugbo Tega Blessing**
-- GitHub: [@githubhandle](https://github.com/Otegaa)
-- Slack: [@slackhandle](https://microverse-students.slack.com/archives/D04VDN1F70Q)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
