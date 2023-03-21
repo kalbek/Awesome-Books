@@ -158,7 +158,9 @@ window.onload = () => {
     title.value = data.title;
     author.value = data.author;
   }
-  books = bookdata;
-  Books.createBookList();
+  if (bookdata !== null) {
+    books = bookdata;
+    Books.createBookList();
+  }
   this.title.focus();
 };
