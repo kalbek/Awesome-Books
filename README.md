@@ -6,7 +6,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -51,15 +50,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> N/A 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -111,6 +102,11 @@ You can deploy this project through Github Pages
 - Twitter: [@twitterhandle](https://twitter.com/KNuramo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaleb-nuramo/)
 - Website: https://kalbek.github.io/Portfolio/
+
+👤 **@Ekiugbo Tega Blessing**
+- GitHub: [@githubhandle](https://github.com/Otegaa)
+- Slack: [@slackhandle](https://microverse-students.slack.com/archives/D04VDN1F70Q)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
