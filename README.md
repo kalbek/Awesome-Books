@@ -140,6 +140,9 @@ If you like this project give a star to this repositiory.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- I would like to acknowledge my codding partner who made a huge effort on this project.
+- I would also like to thank Microverse for the guidance they made all the way up to this point. 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ❓ FAQ <a name="faq"></a>
