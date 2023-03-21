@@ -6,30 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&family=Inter:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="books">
-      <h1>Awesome Books</h1>
-      <div class="book-list"></div>
+    <section class="books flex-column-centered">
+      <h1>All awesome books</h1>
+      <div class="book-list bordered"></div>
       <br />
       <form id="form" action="">
-        <input
-          type="text"
-          id="title"
-          name="author"
-          onchange="onchange"
-          placeholder="Title"
-        />
+        <div class="title-input-group flex-column-centered">
+          <hr>
+          <p>Add a new book</p>
+          <input type="text" id="title" name="author" placeholder="Title" />
+          <input type="text" id="author" name="author" placeholder="Author" />
+        </div>
         <br />
-        <input
-          type="text"
-          id="author"
-          name="author"
-          onchange="onchange"
-          placeholder="Author"
-        />
-        <br />
-        <button id="add-books">Add</button>
+        <button id="add-books"><p>Add</p></button>
       </form>
     </section>
   </body>

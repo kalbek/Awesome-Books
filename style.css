@@ -4,6 +4,19 @@ body {
   align-items: center;
 }
 
+.title-input-group p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.book-title-authors,
+.removes p,
+#add-books p {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 1px;
+}
+
 .books,
 .add-books {
   display: flex;
@@ -11,10 +24,106 @@ body {
   align-items: flex-start;
 }
 
+.books h1 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
 hr {
-  width: 14vw;
+  width: 20vw;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border: 3px solid #000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 form input {
   margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-spaced {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bordered {
+  width: 50vw;
+  border: 4px solid black;
+  border-radius: 2px;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.book-title-authors {
+  padding: 1rem 0.3rem;
+}
+
+.removes {
+  height: 75%;
+  margin-top: 4%;
+  border: 2px solid black;
+  width: 150px;
+  box-shadow: 5px 5px;
+  margin-right: 8px;
+}
+
+#evens {
+  background-color: #ddd;
+}
+
+.title-input-group hr {
+  height: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+#add-books {
+  width: 100px;
+  height: 50px;
+  box-shadow: 5px 5px;
+  border: 2px solid black;
 }
