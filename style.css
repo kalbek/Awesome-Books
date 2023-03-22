@@ -52,8 +52,22 @@ body nav .date {
   cursor: pointer;
 }
 
-.hidden {
+.hidden,
+.hidden * {
   display: none;
+}
+
+.visible,
+.visible * {
+  display: block;
+}
+
+.active a {
+  color: #476a8b;
+}
+
+.inactive a{
+  color: #000 ;
 }
 
 nav ul li:hover {
@@ -190,7 +204,7 @@ form {
 }
 
 .list-copyright {
-  margin-top: -8rem;
+  /* margin-top: -8rem; */
 }
 
 .relative {

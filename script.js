@@ -5,6 +5,9 @@ const title = document.getElementById("title");
 const author = document.getElementById("author");
 const titles = document.getElementById("title");
 const authors = document.getElementById("author");
+const list = document.getElementById("list");
+const add = document.getElementById("add");
+const contact = document.getElementById("contact");
 class Books {
   constructor(id, title, author) {
     this.id = id;
@@ -126,7 +129,42 @@ class Books {
     title.focus();
     localStorage.setItem("bookdata", JSON.stringify(books));
   };
+  // action to handle link selections from menu
+  static handleSelections = (item) => {
+    if (item.id === "list") {
+      list.classList.remove("inactive");
+      list.classList.add("active");
+      add.classList.remove("active");
+      add.classList.add("inactive");
+      contact.classList.remove("active");
+      contact.classList.add("inactive");
+    } else if (item.id === "add") {
+      list.classList.remove("active");
+      list.classList.add("inactive");
+      add.classList.remove("inactive");
+      add.classList.add("active");
+      contact.classList.remove("active");
+      contact.classList.add("inactive");
+    } else {
+      list.classList.remove("active");
+      list.classList.add("inactive");
+      add.classList.remove("active");
+      add.classList.add("inactive");
+      contact.classList.remove("inactive");
+      contact.classList.add("active");
+    }
+  };
 }
+// handle link selections from menu
+add.addEventListener("click", () => {
+  Books.handleSelections(add);
+});
+list.addEventListener("click", () => {
+  Books.handleSelections(list);
+});
+contact.addEventListener("click", () => {
+  Books.handleSelections(contact);
+});
 //   handle button click event for add books
 addButton.addEventListener("click", (e) => {
   Books.addBooks(titles, authors);

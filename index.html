@@ -18,11 +18,11 @@
           <li id="title">Awesome Books</li>
         </div>
         <div class="menu">
-          <li><a href="./index.html">List</a></li>
+          <li id="list" class="active"><a href="#">List</a></li>
           |
-          <li><a href="./add.html">Add new</a></li>
+          <li id="add" class="inactive"><a href="#">Add new</a></li>
           |
-          <li><a href="./contact.html">Contact</a></li>
+          <li id="contact" class="inactive"><a href="#">Contact</a></li>
         </div>
       </ul>
       <div class="date" id="date">
@@ -31,15 +31,17 @@
         <div id="time"></div>
       </div>
     </nav>
-    <section class="books flex-column-centered relative">
-      <div class="title">
+    <!-- All books section -->
+    <section class="all-books">
+      <div class="flex-column-centered">
         <h1>All awesome books</h1>
-      </div>
-      <div class="list">
         <div class="book-list bordered"></div>
+        <br />
       </div>
-      <br />
-      <form class="hidden" id="form" action="">
+    </section>
+    <!--Add books section -->
+    <section class="add-books hidden">
+      <form id="form" action="">
         <div class="title-input-group flex-column-centered">
           <hr />
           <p>Add a new book</p>
@@ -49,9 +51,30 @@
         <br />
         <button id="add-books"><p>Add</p></button>
       </form>
-      <section class="list-copyright">
-        <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
-      </section>
+    </section>
+    <!-- Contact section -->
+    <section class="contact-info hidden">
+      <div class="flex-column-centered">
+        <div class="title">
+          <h1>Contact information</h1>
+        </div>
+        <br />
+        <div class="contact">
+          <p>
+            Do you have any questions or you just want to say "Hello"? <br />
+            you can reach out to us!
+          </p>
+          <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+          </ul>
+        </div>
+        <br />
+      </div>
+    </section>
+    <section class="list-copyright absolute-bottom">
+      <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
     </section>
   </body>
   <script src="./script.js"></script>
