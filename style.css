@@ -4,7 +4,8 @@ body {
   align-items: center;
 }
 
-nav ul, .copyright {
+nav ul,
+.copyright {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,7 @@ nav ul, .copyright {
   border-radius: 5px;
 }
 
-.copyright  {
+.copyright {
   left: 15%;
   bottom: 2%;
   margin-top: 14%;
@@ -59,6 +60,10 @@ nav ul li:hover {
   color: #476a8b;
 }
 
+nav {
+  margin-bottom: 1rem;
+}
+
 .title-input-group p {
   font-size: 30px;
   font-weight: 600;
@@ -66,7 +71,8 @@ nav ul li:hover {
 
 .book-title-authors,
 .removes p,
-#add-books p, .contact {
+#add-books p,
+.contact {
   font-size: 17px;
   font-weight: 600;
   padding-bottom: 1px;
@@ -181,4 +187,25 @@ form {
   height: 50px;
   box-shadow: 5px 5px;
   border: 2px solid black;
+}
+
+.list-copyright {
+  margin-top: -8rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.list {
+  min-height: 51.5vh;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 15%;
+}
+
+.title h1 {
+  font-size: 27px;
 }

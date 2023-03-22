@@ -18,11 +18,11 @@
           <li id="title">Awesome Books</li>
         </div>
         <div class="menu">
-          <li><a href="./index.html">List</a> </li>
+          <li><a href="./index.html">List</a></li>
           |
-          <li><a href="./add.html">Add new</a> </li>
+          <li><a href="./add.html">Add new</a></li>
           |
-          <li><a href="./contact.html">Contact</a> </li>
+          <li><a href="./contact.html">Contact</a></li>
         </div>
       </ul>
       <div class="date" id="date">
@@ -34,7 +34,9 @@
     <section class="books flex-column-centered">
       <button class="hidden" id="add-books"></button>
       <section class="flex-column-centered">
-        <h1>Contact information</h1>
+        <div class="title">
+          <h1>Contact information</h1>
+        </div>
         <br />
         <div class="contact">
           <p>
@@ -50,9 +52,18 @@
         <br />
       </section>
     </section>
-    <section>
+    <section class="absolute-bottom">
       <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
     </section>
   </body>
-  <script src="./script.js"></script>
+  <script>
+    let date = new Date();
+    let time = new Date();
+    const dateSection = document.getElementById("dates");
+    const timeSection = document.getElementById("time");
+    date = date.toDateString();
+    time = time.toLocaleTimeString();
+    dateSection.innerHTML = date;
+    timeSection.innerHTML = time;
+  </script>
 </html>

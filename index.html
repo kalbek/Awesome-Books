@@ -18,11 +18,11 @@
           <li id="title">Awesome Books</li>
         </div>
         <div class="menu">
-          <li><a href="./index.html">List</a> </li>
+          <li><a href="./index.html">List</a></li>
           |
-          <li><a href="./add.html">Add new</a> </li>
+          <li><a href="./add.html">Add new</a></li>
           |
-          <li><a href="./contact.html">Contact</a> </li>
+          <li><a href="./contact.html">Contact</a></li>
         </div>
       </ul>
       <div class="date" id="date">
@@ -31,11 +31,15 @@
         <div id="time"></div>
       </div>
     </nav>
-    <section class="books flex-column-centered">
-      <h1>All awesome books</h1>
-      <div class="book-list bordered"></div>
+    <section class="books flex-column-centered relative">
+      <div class="title">
+        <h1>All awesome books</h1>
+      </div>
+      <div class="list">
+        <div class="book-list bordered"></div>
+      </div>
       <br />
-      <form id="form" action="">
+      <form class="hidden" id="form" action="">
         <div class="title-input-group flex-column-centered">
           <hr />
           <p>Add a new book</p>
@@ -45,9 +49,9 @@
         <br />
         <button id="add-books"><p>Add</p></button>
       </form>
-    </section>
-    <section>
-      <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
+      <section class="list-copyright">
+        <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
+      </section>
     </section>
   </body>
   <script src="./script.js"></script>

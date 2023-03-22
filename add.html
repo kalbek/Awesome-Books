@@ -18,11 +18,11 @@
           <li id="title">Awesome Books</li>
         </div>
         <div class="menu">
-          <li><a href="./index.html">List</a> </li>
+          <li><a href="./index.html">List</a></li>
           |
-          <li><a href="./add.html">Add new</a> </li>
+          <li><a href="./add.html">Add new</a></li>
           |
-          <li><a href="./contact.html">Contact</a> </li>
+          <li><a href="./contact.html">Contact</a></li>
         </div>
       </ul>
       <div class="date" id="date">
@@ -32,9 +32,16 @@
       </div>
     </nav>
     <section class="books flex-column-centered">
+      <div class="hidden">
+        <h1>All awesome books</h1>
+        <div class="book-list bordered"></div>
+        <br />
+      </div>
       <form id="form" action="">
         <div class="title-input-group flex-column-centered">
-          <p>Add a new book</p>
+          <div class="title">
+            <h1>Add a new book</h1>
+          </div>
           <input type="text" id="title" name="author" placeholder="Title" />
           <input type="text" id="author" name="author" placeholder="Author" />
         </div>
@@ -42,7 +49,7 @@
         <button id="add-books"><p>Add</p></button>
       </form>
     </section>
-    <section>
+    <section class="absolute-bottom">
       <div class="copyright">Copyright &copy; Kaleb Bekele.</div>
     </section>
   </body>
