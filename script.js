@@ -60,6 +60,7 @@ class Books {
     localStorage.setItem('bookdata', JSON.stringify(books));
     title.focus();
   };
+
   // handle dynamically creating book list html content
   static createBookList = () => {
     bookList.innerHTML = '';
@@ -91,6 +92,7 @@ class Books {
       }
     });
   };
+
   static createBookList = () => {
     bookList.innerHTML = '';
     books.forEach((book) => {
@@ -121,6 +123,7 @@ class Books {
       }
     });
   };
+
   // handle adding books to books array
   static addBooks = (titles, authors) => {
     books.push({
@@ -133,6 +136,7 @@ class Books {
     title.focus();
     localStorage.setItem('bookdata', JSON.stringify(books));
   };
+  
   // action to handle link selections from menu
   static handleSelections = (item) => {
     if (item.id === 'list') {
