@@ -22,6 +22,15 @@ nav ul, .copyright {
   margin-top: 14%;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #476a8b;
+}
+
 body nav .date {
   position: absolute;
   right: 14vw;
