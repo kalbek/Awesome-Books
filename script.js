@@ -136,7 +136,7 @@ class Books {
     title.focus();
     localStorage.setItem('bookdata', JSON.stringify(books));
   };
-  
+
   // action to handle link selections from menu
   static handleSelections = (item) => {
     if (item.id === 'list') {
