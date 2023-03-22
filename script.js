@@ -11,6 +11,7 @@ const contact = document.getElementById("contact");
 const listSection = document.getElementById("list-all-books");
 const addSection = document.getElementById("add-new-book");
 const contactSection = document.getElementById("see-contact");
+const copyright = document.getElementById("copyright");
 class Books {
   constructor(id, title, author) {
     this.id = id;
@@ -149,6 +150,8 @@ class Books {
       listSection.classList.add("visible");
       contactSection.classList.remove("visible");
       contactSection.classList.add("hidden");
+      copyright.classList.remove("absolute-bottom");
+      copyright.classList.add("copyrights");
     } else if (item.id === "add") {
       // color style for navigation
       list.classList.remove("active");
@@ -164,6 +167,8 @@ class Books {
       listSection.classList.add("hidden");
       contactSection.classList.remove("visible");
       contactSection.classList.add("hidden");
+      copyright.classList.remove("copyrights");
+      copyright.classList.add("absolute-bottom");
     } else {
       // color style for navigation
       list.classList.remove("active");
@@ -179,6 +184,8 @@ class Books {
       listSection.classList.add("hidden");
       contactSection.classList.remove("hidden");
       contactSection.classList.add("visible");
+      copyright.classList.remove("copyrights");
+      copyright.classList.add("absolute-bottom");
     }
   };
 }

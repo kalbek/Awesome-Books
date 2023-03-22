@@ -203,10 +203,6 @@ form {
   border: 2px solid black;
 }
 
-.list-copyright {
-  /* margin-top: -8rem; */
-}
-
 .relative {
   position: relative;
 }
@@ -222,4 +218,12 @@ form {
 
 .title h1 {
   font-size: 27px;
+}
+
+.all-books {
+  min-height: 60.5vh;
+}
+
+.copyrights {
+  margin-top: -5rem;
 }
