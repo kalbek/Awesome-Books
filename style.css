@@ -4,7 +4,7 @@ body {
   align-items: center;
 }
 
-ul {
+ul, .copyright {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -14,6 +14,12 @@ ul {
   border: 3.5px solid #000;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.copyright  {
+  left: 15%;
+  bottom: 2%;
+  margin-top: 14%;
 }
 
 body nav .date {
