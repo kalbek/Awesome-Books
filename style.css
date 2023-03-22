@@ -48,7 +48,7 @@ body nav .date {
   width: 35%;
 }
 
-.menu:hover {
+a:hover {
   cursor: pointer;
 }
 
