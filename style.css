@@ -4,7 +4,7 @@ body {
   align-items: center;
 }
 
-ul, .copyright {
+nav ul, .copyright {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -42,6 +42,10 @@ body nav .date {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 nav ul li:hover {
   color: #476a8b;
 }
@@ -53,7 +57,7 @@ nav ul li:hover {
 
 .book-title-authors,
 .removes p,
-#add-books p {
+#add-books p, .contact {
   font-size: 17px;
   font-weight: 600;
   padding-bottom: 1px;
