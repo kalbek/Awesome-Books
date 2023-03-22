@@ -12,13 +12,31 @@
     />
   </head>
   <body>
+    <nav>
+      <ul>
+        <div class="title">
+          <li id="title">Awesome Books</li>
+        </div>
+        <div class="menu">
+          <li><a href="./index.html"></a> List</li>
+          |
+          <li><a href="./add.html"></a> Add new</li>
+          |
+          <li><a href="./contact.html"></a> Contact</li>
+        </div>
+      </ul>
+      <div class="date" id="date">
+        <div id="dates"></div>, 
+        <div id="time"></div>
+      </div>
+    </nav>
     <section class="books flex-column-centered">
       <h1>All awesome books</h1>
       <div class="book-list bordered"></div>
       <br />
       <form id="form" action="">
         <div class="title-input-group flex-column-centered">
-          <hr>
+          <hr />
           <p>Add a new book</p>
           <input type="text" id="title" name="author" placeholder="Title" />
           <input type="text" id="author" name="author" placeholder="Author" />
